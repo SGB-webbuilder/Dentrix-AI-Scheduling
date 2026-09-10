@@ -1,0 +1,8 @@
+# Repository owner confirmed from the selected private GitHub destination.
+# Review enforcement still requires an active repository ruleset. Add a qualified
+# independent reviewer/team before sensitive implementation and production use.
+* @SGB-webbuilder
+/.github/ @SGB-webbuilder
+/packages/integrations/ @SGB-webbuilder
+/packages/security/ @SGB-webbuilder
+/infrastructure/ @SGB-webbuilder

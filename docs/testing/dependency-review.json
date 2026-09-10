@@ -1,0 +1,22 @@
+{
+  "status": "pending",
+  "package_lock_sha256": "eaa9d71d36748533b71cbe39a37aa74774589520d14c245a235ba3799aa7667b",
+  "basis": "Signed agreement section 4.2; notification and HIPAA/license/security confirmation are not evidenced.",
+  "izure_notification_reference": null,
+  "hipaa_review_reference": null,
+  "license_review_reference": null,
+  "security_review_reference": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "candidate_versions": {
+    "node": "24.20.0",
+    "npm": "11.19.0",
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.13.3",
+    "eslint": "10.10.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "actions/checkout": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "actions/setup-node": "820762786026740c76f36085b0efc47a31fe5020"
+  }
+}

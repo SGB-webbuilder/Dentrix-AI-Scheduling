@@ -1,0 +1,6 @@
+{
+  "name": "@dentrix-scheduling/scheduling",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reserved deterministic scheduling domain and pure rule evaluation."
+}

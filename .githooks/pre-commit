@@ -1,0 +1,4 @@
+#!/bin/sh
+# Template only. No hook is enabled until approved repository onboarding.
+# Reads staged index blobs and prints no raw matches.
+exec node scripts/scan-secrets.mjs --staged

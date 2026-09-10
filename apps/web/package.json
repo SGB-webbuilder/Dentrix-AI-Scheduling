@@ -1,0 +1,6 @@
+{
+  "name": "@dentrix-scheduling/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reserved Next.js presentation and HTTP entrypoint; no application is implemented."
+}

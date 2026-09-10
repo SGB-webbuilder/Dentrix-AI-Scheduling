@@ -1,0 +1,6 @@
+{
+  "name": "@dentrix-scheduling/security",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reserved server-side PHI, identity, authorization and isolation policy."
+}

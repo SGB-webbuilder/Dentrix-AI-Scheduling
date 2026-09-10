@@ -1,0 +1,40 @@
+{
+  "name": "dentrix-repository-foundation",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "Local repository preparation candidate; no application runtime",
+  "engines": {
+    "node": "24.20.0",
+    "npm": "11.19.0"
+  },
+  "packageManager": "npm@11.19.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "validate:foundation": "node scripts/validate-foundation.mjs",
+    "test": "node --test tests/foundation/*.test.mjs",
+    "test:foundation": "node --test tests/foundation/*.test.mjs",
+    "secrets:local": "node scripts/scan-secrets.mjs --local",
+    "secrets:staged": "node scripts/scan-secrets.mjs --staged",
+    "secrets:tracked": "node scripts/scan-secrets.mjs --tracked",
+    "check:dependency-review": "node scripts/check-dependency-review.mjs",
+    "lint": "eslint scripts tests/foundation eslint.config.mjs --max-warnings=0",
+    "typecheck": "tsc --project tsconfig.json",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "audit:dependencies": "npm audit --audit-level=low --ignore-scripts",
+    "build": "npm run build:foundation",
+    "build:foundation": "node scripts/validate-foundation.mjs",
+    "build:app": "node scripts/application-pending.mjs",
+    "check:foundation": "npm run validate:foundation && npm run secrets:local && npm run test:foundation",
+    "check": "npm run check:foundation && npm run check:dependency-review && npm run lint && npm run typecheck && npm run format:check && npm run audit:dependencies"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.13.3",
+    "eslint": "10.10.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2"
+  }
+}

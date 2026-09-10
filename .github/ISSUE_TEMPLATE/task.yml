@@ -1,0 +1,36 @@
+name: Scoped task
+description: Technical record linked to an existing ClickUp task, without duplicate execution tracking.
+title: '[Task] '
+body:
+  - type: input
+    id: clickup
+    attributes:
+      label: ClickUp task link
+      description: ClickUp remains the authoritative execution record.
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective and authorization reference
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope, exclusions, and affected modules
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Measurable acceptance criteria and verification
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Dependencies, security implications, and blockers
+      description: Identify owners and sanitized evidence; never paste credentials or PHI.
+    validations:
+      required: true
