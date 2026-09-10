@@ -1,12 +1,14 @@
 # GitHub settings checklist
 
-Status: recommendations only; no remote repository or settings have been changed. Verify the actual organization plan and entitlements before relying on enforcement. Sources checked 2026-09-09.
+Status: the scaffold was pushed to the existing private `SGB-webbuilder/Dentrix-AI-Scheduling` repository on 2026-09-11. Its visibility, owner access and default `main` branch were verified. Administrative security settings below remain recommendations until separately applied and tested. Verify the actual account plan and entitlements before relying on enforcement. Sources checked 2026-09-09.
 
 ## Repository and people
 
-- [ ] Confirm the private **IZURE-designated organization/repository**, administrator, technical owner and client transfer expectations under agreement §10.
+- [x] Select the existing private `SGB-webbuilder/Dentrix-AI-Scheduling` repository and verify `SGB-webbuilder` has administrator access.
+- [ ] Confirm with IZURE that this personal-account repository is the designated delivery location, or document the approved transfer to the required IZURE organization, under agreement §10.
 - [ ] Keep visibility private. Limit access to named authorized collaborators; Sedrick is primary technical owner, a designated IZURE administrator owns administration, and future engineers receive write access only as needed. Require MFA and remove departed users.
-- [ ] Confirm Sedrick's actual GitHub handle/team and replace the commented placeholder in `.github/CODEOWNERS`. Do not invent a handle from the local username. Set a second security/infrastructure reviewer when available.
+- [x] Confirm Sedrick's GitHub handle as `@SGB-webbuilder` and activate it in `.github/CODEOWNERS`.
+- [ ] Set a qualified second security/infrastructure reviewer or team when available.
 - [ ] Enable Issues for technical records linked to ClickUp. Disable Wiki and Discussions initially; keep documentation in PR-reviewed `docs/`. Leave GitHub Projects off unless it is a view of the existing ClickUp workflow rather than another backlog.
 
 ## Main branch

@@ -39,7 +39,7 @@ See [architecture](docs/architecture/architecture-overview.md), [module responsi
 
 Use the Node/npm versions pinned in the tooling files. Run dependency-free foundation checks first as documented in [tooling](docs/testing/tooling.md). After the candidate dependencies have completed review, use `npm ci --ignore-scripts`, then the validation commands declared in `package.json`. Commit the lockfile. [npm documents](https://docs.npmjs.com/cli/v11/commands/npm-ci/) reproducible clean installation and the limits of `ignore-scripts`.
 
-No AWS account, Dentrix sandbox, model connection, patient data, or database is needed for repository preparation. Do not initialize Git in the parent document/KOS workspace. Install this scaffold only into the confirmed private IZURE-designated checkout after resolving the [setup checklist](docs/project/setup-checklist.md).
+No AWS account, Dentrix sandbox, model connection, patient data, or database is needed for repository preparation. This scaffold is the Git root pushed to the private `SGB-webbuilder/Dentrix-AI-Scheduling` repository. The parent document/KOS workspace is outside Git and must stay outside it. Confirm IZURE's ownership/designation and the remaining [setup checklist](docs/project/setup-checklist.md) before treating this remote as the contractual delivery repository or beginning product implementation.
 
 There is no `npm run dev` or product build yet. Add the reviewed framework and actual build/test commands in the separately authorized application-shell task. A README placeholder is not an implemented or tested feature.
 
